@@ -477,3 +477,109 @@ nav ul li a:hover {
     text-align: center;
   }
 }
+/* ===== RESPONSIVE FIXES ===== */
+
+@media (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .about-container,
+  .vendors-container,
+  .products-container,
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img,
+  .vendor-card img,
+  .product-card img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .about-text,
+  .contact-info,
+  .contact-form {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .home {
+    background-position: center;
+    padding: 40px 10px;
+    min-height: 70vh;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .btn, .btn-outline {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .about, .vendors, .products, .contact {
+    padding: 50px 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .home p {
+    font-size: 0.95rem;
+  }
+
+  .product-card,
+  .vendor-card {
+    width: 90%;
+  }
+}
+
