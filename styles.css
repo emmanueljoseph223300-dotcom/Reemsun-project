@@ -1,5 +1,9 @@
 body {
   background-color: rgb(252, 252, 146);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 .logo-name{
   width: 80px;
